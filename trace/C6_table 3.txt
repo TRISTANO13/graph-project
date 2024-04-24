@@ -1,0 +1,144 @@
+You chose table 3
+
+
+Here is the graph:
+
+
+Node N° -> [Successors]
+(duration)
+----------------------
+Node α -> [1, 2]
+(0,)
+Node 1 -> [3]
+(2,)
+Node 2 -> [3, 4]
+(5,)
+Node 4 -> [3, 5, 8, 11]
+(2,)
+Node 5 -> [6, 9]
+(5,)
+Node 6 -> [7, 8, 9]
+(5,)
+Node 7 -> [8, 9]
+(9,)
+Node 12 -> [8]
+(1,)
+Node 11 -> [10]
+(1,)
+Node 3 -> [12]
+(4,)
+Node 8 -> [13]
+(1,)
+Node 9 -> [13]
+(5,)
+Node 10 -> [13]
+(9,)
+
+
+Here is the adjacency matrix:
+
+
+      α  1  2  3  4  5  6  7  8  9 10 11 12  ω
+    ------------------------------------------
+  α | *  0  0  *  *  *  *  *  *  *  *  *  *  *
+  1 | *  *  *  2  *  *  *  *  *  *  *  *  *  *
+  2 | *  *  *  5  5  *  *  *  *  *  *  *  *  *
+  3 | *  *  *  *  *  *  *  *  *  *  *  *  4  *
+  4 | *  *  *  2  *  2  *  *  2  *  *  2  *  *
+  5 | *  *  *  *  *  *  5  *  *  5  *  *  *  *
+  6 | *  *  *  *  *  *  *  5  5  5  *  *  *  *
+  7 | *  *  *  *  *  *  *  *  9  9  *  *  *  *
+  8 | *  *  *  *  *  *  *  *  *  *  *  *  *  1
+  9 | *  *  *  *  *  *  *  *  *  *  *  *  *  5
+ 10 | *  *  *  *  *  *  *  *  *  *  *  *  *  9
+ 11 | *  *  *  *  *  *  *  *  *  *  1  *  *  *
+ 12 | *  *  *  *  *  *  *  *  1  *  *  *  *  *
+  ω | *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+
+Has cycle: False
+
+
+Here are the ranks for each node:
+
+
+Rank of node α: 0
+Rank of node 1: 1
+Rank of node 2: 1
+Rank of node 4: 2
+Rank of node 5: 3
+Rank of node 6: 4
+Rank of node 7: 5
+Rank of node 12: 4
+Rank of node 11: 3
+Rank of node 3: 3
+Rank of node 8: 6
+Rank of node 9: 6
+Rank of node 10: 4
+Rank of node ω: 7
+
+
+Here are the earliest start times for each task:
+
+
+Task α: 0
+Task 1: 0
+Task 2: 0
+Task 3: 7
+Task 4: 5
+Task 5: 7
+Task 6: 12
+Task 7: 17
+Task 8: 26
+Task 9: 26
+Task 10: 8
+Task 11: 7
+Task 12: 11
+Task ω: 31
+
+
+Here are the latest start times for each task:
+
+
+Task α: 0
+Task 1: 24
+Task 2: 0
+Task 3: 26
+Task 4: 5
+Task 5: 7
+Task 6: 12
+Task 7: 17
+Task 8: 30
+Task 9: 26
+Task 10: 22
+Task 11: 30
+Task 12: 30
+Task ω: 31
+
+
+Here are the total margins for each task:
+
+
+Task α: 0
+Task 1: 24
+Task 2: 0
+Task 3: 19
+Task 4: 0
+Task 5: 0
+Task 6: 0
+Task 7: 0
+Task 8: 4
+Task 9: 0
+Task 10: 14
+Task 11: 23
+Task 12: 19
+Task ω: 0
+
+
+Here is the critical path:
+
+
+['α', 2, 4, 5, 6, 7, 9, 'ω']
+
+
+Enter 1 to exit or any other number to continue:

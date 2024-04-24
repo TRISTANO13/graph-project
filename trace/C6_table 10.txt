@@ -1,0 +1,116 @@
+You chose table 10
+
+
+Here is the graph:
+
+
+Node N° -> [Successors]
+(duration)
+----------------------
+Node α -> [1]
+(0,)
+Node 1 -> [2, 4, 5]
+(2,)
+Node 2 -> [3, 4, 8]
+(3,)
+Node 4 -> [5, 6, 8]
+(6,)
+Node 5 -> [6, 7]
+(2,)
+Node 3 -> [7]
+(5,)
+Node 7 -> [8]
+(6,)
+Node 6 -> [9]
+(1,)
+Node 8 -> [9]
+(1,)
+
+
+Here is the adjacency matrix:
+
+
+      α  1  2  3  4  5  6  7  8  ω
+    ------------------------------
+  α | *  0  *  *  *  *  *  *  *  *
+  1 | *  *  2  *  2  2  *  *  *  *
+  2 | *  *  *  3  3  *  *  *  3  *
+  3 | *  *  *  *  *  *  *  5  *  *
+  4 | *  *  *  *  *  6  6  *  6  *
+  5 | *  *  *  *  *  *  2  2  *  *
+  6 | *  *  *  *  *  *  *  *  *  1
+  7 | *  *  *  *  *  *  *  *  6  *
+  8 | *  *  *  *  *  *  *  *  *  1
+  ω | *  *  *  *  *  *  *  *  *  *
+
+
+Has cycle: False
+
+
+Here are the ranks for each node:
+
+
+Rank of node α: 0
+Rank of node 1: 1
+Rank of node 2: 2
+Rank of node 4: 3
+Rank of node 5: 4
+Rank of node 3: 3
+Rank of node 7: 5
+Rank of node 6: 5
+Rank of node 8: 6
+Rank of node ω: 7
+
+
+Here are the earliest start times for each task:
+
+
+Task α: 0
+Task 1: 0
+Task 2: 2
+Task 3: 5
+Task 4: 5
+Task 5: 11
+Task 6: 13
+Task 7: 13
+Task 8: 19
+Task ω: 20
+
+
+Here are the latest start times for each task:
+
+
+Task α: 0
+Task 1: 0
+Task 2: 2
+Task 3: 8
+Task 4: 5
+Task 5: 11
+Task 6: 19
+Task 7: 13
+Task 8: 19
+Task ω: 20
+
+
+Here are the total margins for each task:
+
+
+Task α: 0
+Task 1: 0
+Task 2: 0
+Task 3: 3
+Task 4: 0
+Task 5: 0
+Task 6: 6
+Task 7: 0
+Task 8: 0
+Task ω: 0
+
+
+Here is the critical path:
+
+
+['α', 1, 2, 4, 5, 7, 8, 'ω']
+
+
+Enter 1 to exit or any other number to continue:
